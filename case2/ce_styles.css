@@ -13,7 +13,7 @@
 
 
 /* Window and Body Styles */
-html, body {
+html {
    background-color: rgb(101,101,101);
 }
 body {
@@ -67,8 +67,6 @@ div.cell a {
  padding-left: 8px;
  padding-top:8px;
 }
-
-
 /* Footer Styles */
 footer {
    position: absolute;

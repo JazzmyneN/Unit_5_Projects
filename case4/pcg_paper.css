@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 3
+   Case Problem 4
+
+   Park City Gazette Style Sheet
+   Author: Jazzmyne Nixon
+    Date: 9/25/2019   
+
+   Filename: pcg_paper.css
+   Supporting Files: 
+
+*/
+
+
+/*layout styles*/
+html, body {
+   max-width: 960px;
+   min-width: 640px;
+   width: 75%;
+   box-sizing: border-box;
+   margin: auto;
+   font-family: 'Muli', sans-serif;
+
+}
+body img {
+   width: 100%; 
+}
+body {
+   margin: auto;
+   border: 1px solid gray;
+}
+.row:after {
+   clear: both;
+   content: "";
+   display: table;
+}
+div#col-1-1 {width: 100%;}
+div#col-1-3 {width: 33%;}
+div#col-2-3 {width: 67%;}
+
+#col-1-3 {
+   float: left;
+}
+#col-2-3 {
+   float: right;
+}
+.row {
+   clear: both;
+   content: "";
+}
+/*story styles*/
+div[class^="story"] {
+   float: left;
+   border: 1px solid gray;
+   margin-top: 10px;
+   border-radius: 2px;
+}
+.story p {
+   padding-left:10px;
+   padding-right:10px;
+   color: gray;
+}
+.story img {
+   float: left;
+   width: 100px;
+   padding-right: 5px;
+}
+.story h3 {
+   font-family: 'Vollkorn', serif;
+   font-size: 1.5em;
+   background-color: gray;
+   color: white;
+   margin-top: 0;
+   padding: 5px;
+}
+.storiescontainer {
+   height: 582px;
+   overflow: scroll;
+}
+/*nav styles*/
+hr {
+   width: 50%
+}
+.links{
+   text-align: center;
+   line-height: 1.25em;
+   padding: 10px;
+   color: gray;
+}
+.links ul li{
+   text-align: center;
+}
+.links li:first-of-type {   
+   padding-top: 5px;
+   border-top: 1px solid gray;
+}
+.links li:last-of-type {
+   border-bottom: 1px solid gray;
+   padding-bottom: 5px;
+}
+.links a:visited {
+   color: gray;
+}
+/*footer*/
+footer p {
+   background-color: gray;
+   padding: 10px;
+   display: block;
+   margin: auto;
+   color: white;
+   text-align: center;
+}
+footer::after {
+   clear: both;
+   content: "";
+   display: table;
+}
